@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pr-1.css">
+    
+</head>
+<body>
+    <input type="button" id="btn" value="change color">
+    <script>
+
+        let color=['red','blue','green','orange'];
+        let btn=document.getElementById('btn');
+        btn.addEventListener('click',function(){
+          let randomColor=color[Math.floor(Math.random()*
+          color.length)];
+          document.body.style.background=randomColor;
+        });
+
+
+    </script>
+    
+</body>
+
+</html>
